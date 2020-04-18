@@ -43,7 +43,8 @@ set autoindent
 "set paste
 
 " Show tabs and spaces 
-set listchars=tab:>-,trail:-
+set list
+set listchars=tab:>·,space:·
 
 " Show status bar 
 set laststatus=2
@@ -93,6 +94,7 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 " NERDTree arrows
 let g:NERDTreeDirArrowExpandable = '>'
 let g:NERDTreeDirArrowCollapsible = '-'
+let g:NERDTreeShowHidden=1
 
 " Auto focus main window on launch
 augroup NERD
